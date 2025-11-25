@@ -21,6 +21,8 @@ class ViewController: UIViewController {
         countLabel.text = "0"
         countLabel.font = .systemFont(ofSize: 40)
         countLabel.textAlignment = .center
+        
+        //位置とサイズをピクセル単位で命令。 座標(0, 200)に、幅は画面いっぱい、高さは50で配置。
         countLabel.frame = CGRect(x: 0, y: 200, width: view.frame.width, height: 50)
         view.addSubview(countLabel)
         
