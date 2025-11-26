@@ -1,6 +1,6 @@
 
-import SwiftUI
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController {
 
@@ -22,14 +22,14 @@ class ViewController: UIViewController {
         countLabel.font = .systemFont(ofSize: 40)
         countLabel.textAlignment = .center
         
-        //位置とサイズをピクセル単位で命令。 座標(0, 200)に、幅は画面いっぱい、高さは50で配置。
-        //この実装では0~の数字
+        //位置とサイズをピクセル単位で命令。 座標(0,200)に、幅は画面いっぱい、高さは50で配置。
+        //この実装では0~ の数字
         countLabel.frame = CGRect(x: 0, y: 200, width: view.frame.width, height: 50)
         
         //countLabelを親画面に追加するように命令
         view.addSubview(countLabel)
         
-        //この実装では増やすボタン
+        //この実装では増やす ボタン
         countButton.setTitle("増やす", for: .normal)
         countButton.titleLabel?.font = .systemFont(ofSize: 24)
 
